@@ -1,0 +1,19 @@
+Source: libdisplaycore-image-raw565
+Section: libraries
+Priority: extra
+Maintainer: Matt Jenkins <matt@majenko.co.uk>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+
+Package: libdisplaycore-image-raw565
+Section: libraries
+Architecture: all
+XBSC-Group: DisplayCore
+XBSC-Subgroup: Image
+Depends: libdisplaycore-core
+Provides: Raw565.h
+Description: Raw565 library
+ Display raw RGB565 images from memory
+
+
+
