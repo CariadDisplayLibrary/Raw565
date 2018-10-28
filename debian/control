@@ -12,7 +12,7 @@ XBSC-Group: DisplayCore
 XBSC-Subgroup: Image
 Depends: libdisplaycore-core
 Provides: Raw565.h
-Description: Raw565 library
+Description: Raw565
  Display raw RGB565 images from memory
 
 
