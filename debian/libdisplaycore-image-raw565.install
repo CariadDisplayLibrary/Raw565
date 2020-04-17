@@ -1,2 +1,3 @@
-Raw565.cpp libraries/DisplayCore/Raw565
-Raw565.h libraries/DisplayCore/Raw565
+library.json libraries/DisplayCore/Raw565
+library.properties libraries/DisplayCore/Raw565
+src libraries/DisplayCore/Raw565
