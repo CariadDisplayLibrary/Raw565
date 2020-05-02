@@ -6,7 +6,7 @@ Raw565::Raw565(const color_t *data, int w, int h) : Image() {
     _height = h;
 }
 
-void Raw565::draw(DisplayCore *dev, int x, int y) {
+void Raw565::draw(Cariad *dev, int x, int y) {
     if (_filter != NULL) {
         uint32_t p = 0;
         color_t line[getWidth()];
@@ -26,7 +26,7 @@ void Raw565::draw(DisplayCore *dev, int x, int y) {
     }
 }
 
-void Raw565::draw(DisplayCore *dev, int x, int y, color_t t) {
+void Raw565::draw(Cariad *dev, int x, int y, color_t t) {
     uint32_t p = 0;
     color_t line[getWidth()];
 
@@ -59,7 +59,7 @@ void Raw565::draw(DisplayCore *dev, int x, int y, color_t t) {
     }
 }
 
-void Raw565::drawTransformed(DisplayCore *dev, int x, int y, int transform) {
+void Raw565::drawTransformed(Cariad *dev, int x, int y, int transform) {
     uint32_t p = 0;
     for (int py = 0; py < getHeight(); py++) {
         for (int px = 0; px < getWidth(); px++) {
@@ -82,7 +82,7 @@ void Raw565::drawTransformed(DisplayCore *dev, int x, int y, int transform) {
     }
 }
 
-void Raw565::drawTransformed(DisplayCore *dev, int x, int y, int transform, color_t t) {
+void Raw565::drawTransformed(Cariad *dev, int x, int y, int transform, color_t t) {
     uint32_t p = 0;
     for (int py = 0; py < getHeight(); py++) {
         for (int px = 0; px < getWidth(); px++) {
